@@ -34,6 +34,11 @@ df3 = pd.read_csv(
     usecols = columnas,
     index_col = 'id')
 
+df3 = pd.read_csv(
+    path,
+    usecols = columnas,
+    index_col = 'id')
+
 path_guardado = path = "./data/artwork_data.pickle"
 
 df3.to_pickle(path_guardado)
